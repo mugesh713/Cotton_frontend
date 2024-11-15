@@ -1,0 +1,102 @@
+/* src/style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;  /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #3bb97a;  /* Blue background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow to the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation links */
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+}
+
+/* Prediction Form */
+.prediction-form {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect for the form */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.prediction-form input {
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.prediction-form button {
+    padding: 10px 20px;
+    background-color: #0f0504;  /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.prediction-form button:hover {
+    background-color: #218838;  /* Darker green on hover */
+}
+
+/* Prediction Result */
+.prediction-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* About Page */
+.about-page {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-page h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.about-page p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
