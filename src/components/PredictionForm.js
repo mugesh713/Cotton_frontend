@@ -9,7 +9,7 @@ const PredictionForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "https://cotton-model-1-latest.onrender.com/predict",
+                "https://cotton-model-2-latest.onrender.com/predict",
                 new URLSearchParams({ date_str: date }),
                 {
                     headers: {
