@@ -8,11 +8,17 @@ const PredictionForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://127.0.0.1:8000/predict", new URLSearchParams({ date_str: date }), {
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-            });
+            const response = await axios.post(
+                "https://cotton-model-1-latest.onrender.com/predict",
+                new URLSearchParams({ date_str: date }),
+                {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    withCredentials: true, // Enable credentials
+                }
+            );
+            
             setPrediction(response.data.predicted);
         } catch (error) {
             console.error("Error fetching prediction:", error);
